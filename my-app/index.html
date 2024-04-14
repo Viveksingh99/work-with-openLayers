@@ -5,9 +5,12 @@
     <title>Measure</title>
     <link rel="stylesheet" href="node_modules/ol/ol.css">
     <style>
+      .form{
+        padding: 10px;
+      }
       .map {
         width: 100%;
-        height: 400px;
+        height: 600px;
       }
       .ol-tooltip {
         position: relative;
@@ -47,15 +50,14 @@
     </style>
   </head>
   <body>
-    <div id="map" class="map"></div>
-    <form>
+    <form class="form">
       <label for="type">Measurement type &nbsp;</label>
       <select id="type">
         <option value="length">Length (LineString)</option>
         <option value="area">Area (Polygon)</option>
       </select>
     </form>
-
+    <div id="map" class="map"></div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
